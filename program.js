@@ -21,9 +21,9 @@ function program(event) {
     cloth: get_value("cloth"),
     transportation: get_value("transportation") * 7,
     game: get_value("game"),
-    other: get_value("other")
+    other: get_value("other"),
   };
-  
+
   // Sum computing
   let weeklyExpenses = sum_value(all_expenses).toLocaleString();
   document.getElementById("resultText").innerHTML =

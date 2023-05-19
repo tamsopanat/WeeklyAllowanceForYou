@@ -34,13 +34,13 @@ body {
 
 #refreshButton {
   width: 50px;
-  position:absolute;
+  position: absolute;
   top: 16%;
   margin-left: 10%;
   opacity: 0.5;
 }
 
-.button-container{
+.button-container {
   position: relative;
 }
 
