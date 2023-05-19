@@ -27,19 +27,30 @@ body {
   padding-top: 2%;
 }
 
-#submitButton{
-    width: 100px;
-    margin-left: 45%;
+#submitButton {
+  width: 100px;
+  margin-left: 40%;
 }
 
-#myChart{
+#refreshButton {
+  width: 50px;
+  position:absolute;
+  top: 16%;
+  margin-left: 10%;
+  opacity: 0.5;
+}
+
+.button-container{
+  position: relative;
+}
+
+#myChart {
   background-color: #efd4c5;
-  
   border-radius: 20px;
   padding: 5%;
 }
 
-#resultText{
+#resultText {
   background-color: #efd4c5;
   width: 500px;
   border-radius: 20px;

@@ -53,7 +53,7 @@
       </div>
     </nav>
 
-    <form class="container" id=myForm style="margin-top: 10px">
+    <form class="container" id="myForm" style="margin-top: 10px">
       <h1 style="width: 100%; font-size: 250%; font-weight: bold">
         Weekly Allowance Computing
       </h1>
@@ -121,6 +121,18 @@
 
       <div class="row">
         <div class="row col-6">
+          <img class="col-2" src="img/game-controller.png" alt="game" />
+          <div class="form-group col-2">
+            <label for="game">Games</label>
+            <input
+              type="number"
+              class="form-control"
+              id="game"
+              placeholder="Baht per week"
+            />
+          </div>
+        </div>
+        <div class="row col-6">
           <img
             class="col-2"
             src="img/vehicles.png"
@@ -138,14 +150,23 @@
           </div>
         </div>
       </div>
-
-      <input type="image" src="img/submit.png" alt="Submit" id="submitButton" />
+<div class="button-container">
+      <input type="image" src="img/submit.png" alt="Submit" id="submitButton"/>
+      <input type="image" onClick="window.location.reload();" src="img/refresh.png" alt="refresh" id="refreshButton"/>
+        </div>
     </form>
 
     <div>
       <center>
-        <h4 id="resultText"><span style="opacity: 0.4; font-weight: lighter;">Your result will show here</span></h4>
-        <canvas id="myChart" style="width: 100%; max-width: 500px; max-height: 600px;"></canvas>
+        <h4 id="resultText">
+          <span style="opacity: 0.4; font-weight: lighter"
+            >Your result will show here</span
+          >
+        </h4>
+        <canvas
+          id="myChart"
+          style="width: 100%; max-width: 500px; max-height: 600px"
+        ></canvas>
       </center>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

@@ -1,5 +1,5 @@
 function get_value(ID) {
-  return document.getElementById(ID).value;
+  return parseInt(document.getElementById(ID).value) || 0;
 }
 
 function sum_value(dataDict) {
@@ -14,20 +14,23 @@ function sum_value(dataDict) {
 function program(event) {
   event.preventDefault();
   // Dictionary
-  let name = get_value("name");
-  const all_expenses = {
+  let name = document.getElementById("name").value;
+  let all_expenses = {
     food: get_value("food") * 7,
     drink: get_value("drink") * 7,
     cloth: get_value("cloth"),
     transportation: get_value("transportation") * 7,
-    other: get_value("other"),
+    game: get_value("game"),
+    other: get_value("other")
   };
+  
   // Sum computing
   let weeklyExpenses = sum_value(all_expenses).toLocaleString();
-  document.getElementById("resultText").innerHTML = name + "<br>You should have " + weeklyExpenses +" Baht per week."
+  document.getElementById("resultText").innerHTML =
+    name + "<br>You should have " + weeklyExpenses + " Baht per week.";
 
   //Pie chart creating
-  const data = {
+  let data = {
     labels: Object.keys(all_expenses),
     datasets: [
       {
@@ -38,6 +41,7 @@ function program(event) {
           "#f0d582",
           "#e5a478",
           "#5e4e4e",
+          "#ED9BAE",
           "#616265",
         ],
         hoverOffset: 4,
