@@ -1,0 +1,48 @@
+body {
+  background-color: #f2e3db !important;
+  height: 1000px;
+}
+
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-group input {
+  width: 200px;
+  background-color: #efd4c5;
+  border: 2px solid;
+}
+
+.form-group label {
+  font-size: 20px;
+}
+
+.row img {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.row div {
+  padding-top: 2%;
+}
+
+#submitButton{
+    width: 100px;
+    margin-left: 45%;
+}
+
+#myChart{
+  background-color: #efd4c5;
+  
+  border-radius: 20px;
+  padding: 5%;
+}
+
+#resultText{
+  background-color: #efd4c5;
+  width: 500px;
+  border-radius: 20px;
+  text-align: left;
+  padding: 10px;
+}

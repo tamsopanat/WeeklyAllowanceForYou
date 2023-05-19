@@ -1,0 +1,28 @@
+article {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.carousel-item img {
+  width: 300px;
+}
+
+.carousel-item h1 {
+  font-weight: bold;
+  font-size: 100px;
+}
+
+.first-slide {
+  background-image: url("img/money\ \(1\).png");
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: 75% 7%;
+}
+
+.carousel-item{
+    height: 800px;
+    padding: 10%;
+}
+
+.centered{
+    text-align: center;
+}
