@@ -24,6 +24,9 @@ function program(event) {
     other: get_value("other"),
   };
 
+  console.log(name);
+  console.log(food);
+
   // Sum computing
   let weeklyExpenses = sum_value(all_expenses).toLocaleString();
   document.getElementById("resultText").innerHTML =
